@@ -1,0 +1,61 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  width: 200px;
+}
+
+/* h1 { */
+  /* font-size: 18px; */
+/* } */
+
+
+body{
+  margin:5px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  height: 100px;
+  
+}
+
+h1{
+  margin:0;
+  padding:0;
+  font-size:18px;
+  text-transform:uppercase;
+  position:relative;
+  color:#ccc;
+}
+h1:before{
+  content:"Time Tracker";
+  position:absolute;
+  color:#262626;
+  top:0;
+  left:0;
+  width:0%;
+  overflow:hidden;
+  transition:all 0.5s;
+}
+h1:hover:before{
+  width:100%;
+}
+
+
+
+#time {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+timerLabel {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  z-index: 10000;
+  pointer-events: auto; /* Ensure it can receive mouse events */
+  cursor: move; /* Indicates that the element can be dragged */
+}
